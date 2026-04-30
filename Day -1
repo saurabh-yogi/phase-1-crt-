@@ -51,17 +51,24 @@ int main(){
 }
 
 
-// program 3
-// side of triangle are equilateral or not
+// PROGRAM 4
+// SWAP VARIABLES VALUES
 
- 
 #include<iostream>
 using namespace std;
 
-int main(){
-    int side1, side2, side3;
-    cin >> side1 >> side2 >> side3;
-    bool isEqu = (side1 > 0) && (side1 == side2) && (side2 == side3);
-    cout << isEqu << endl;
+int main() {
+    int a, b;
+    cin >> a >> b;
+    
+    // logic to swap VALUES
+    
+    int temp = a;
+    a = b;
+    b = temp;
+    
+    cout << a << "\n" << b << endl;
     return 0;
+    
+    
 }
