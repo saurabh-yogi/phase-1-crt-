@@ -1,0 +1,15 @@
+//problem 1 change celcius into farenheite
+
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    double celcius;
+    double farenheite;
+    cin >> celcius;
+    
+    farenheite = (celcius * 9.0/5.0) + 32;
+    cout << farenheite << endl;
+    return 0;
+}
