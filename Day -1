@@ -72,3 +72,25 @@ int main() {
     
     
 }
+
+
+// program 5
+// login credientials
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int userid = 8888;
+    int password = 2222;
+    
+    int inputid;
+    int inputpassword;
+    
+    cin >> inputid >> inputpassword;
+    
+    bool isGranted = (userid == inputid) && (password == inputpassword);
+    cout << "access granted" << isGranted << endl;
+    cout << "denied denied" << !isGranted << endl;
+    return 0;
+}
