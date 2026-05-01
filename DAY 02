@@ -113,5 +113,33 @@ int main(){
         default:
         cout << "enter a valid number" ;
     }
+
+// program 6    
+// ivr system
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    cin >> choice;
+    
+    switch(choice){
+        case 1:
+        cout << "for support team" ;
+        break;
+        case 2:
+        cout << "for billing" ;
+        break;
+        case 3:
+        cout << "for technical issue" ;
+        break;
+        case 4:
+        cout << "connect to agent";
+        break;
+        default:
+        cout << "please wait";
+    }
+}
 }
     
