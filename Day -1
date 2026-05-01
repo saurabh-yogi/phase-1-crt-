@@ -140,3 +140,44 @@ int main() {
 
     return 0;
 }
+
+
+// PROGRAM 8
+// AREA OF SHAPES
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    
+    int choice;
+    float r,length,width,side,area;
+    cout << "enter choice:\n";
+    cout << "1.circle\n2.triangle\n3.rectangular";
+    cin >> choice;
+    
+    switch(choice) {
+     case 1: 
+    cout << "enter radius:";
+    cin >> r;
+    area = 3.14 * r * r;
+    cout << "area of circle = " << area << endl;
+    
+    case 2:
+    cout << "enter length and width: " ;
+    cin >> length >> width;
+    area = length * width;
+    cout << "area of triangle = " << area << endl;
+    
+    case 3:
+    cout << "enter side: " ;
+    cin >> side;
+    area = side * side;
+    cout << "area of triangle = " << area << endl;
+    
+    (choice >= 1 && choice <= 3) ?
+    cout << "area=" << area :
+    cout << "invalid choice" << endl; 
+    }
+    return 0;
+}
