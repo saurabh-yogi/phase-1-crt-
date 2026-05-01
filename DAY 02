@@ -1,0 +1,32 @@
+// problem 1
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    
+    if(age >= 18){
+    cout << "eligible for vote ...";
+    }
+    return 0;
+}
+
+// PROBLEM 2
+// IF ELSE 
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    
+    if(age >= 18){
+        cout << "vote";
+    }
+    else{
+        cout << "not vote";
+    }
+    return 0;
+}
