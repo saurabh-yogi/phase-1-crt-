@@ -56,6 +56,25 @@ int main(){
             cout << "not eligible for vote";
         }
             
-        
+   // problem 4
+// ternary operator
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int max_number;
+    
+    
+    cout << "enter first number: ";
+    cin >> a;
+    cout << "enter second number: ";
+    cin >> b;
+    
+    max_number = (a>b) ? a : b;
+    cout << max_number;
+    return 0;
+}     
     }
 }
