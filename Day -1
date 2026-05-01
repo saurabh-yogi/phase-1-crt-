@@ -94,3 +94,27 @@ int main(){
     cout << "denied denied" << !isGranted << endl;
     return 0;
 }
+
+
+// Program 6
+// alphabet case chceker
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    
+    cout << "enter a character: ";
+    cin >> ch;
+    
+    (ch >= 'A' && ch <=  'Z') ?
+    cout << "uppercase" :
+    
+    (ch >= 'a' && ch <= 'z') ?
+    cout << "lowercase" :
+    
+    cout << "no alphabet";
+    
+    return 0;
+}
