@@ -141,5 +141,33 @@ int main(){
         cout << "please wait";
     }
 }
+
+// problem 7
+// motion led detect system
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    string dayornight;
+    bool motiondetected;
+    
+    cout << "is it day or night?" ;
+    cin >> dayornight;
+    cout << "is motion detected?" ;
+    cin >> motiondetected;
+    
+    if(dayornight == "night"){
+        if(motiondetected){
+            cout << "bright led" ;
+            
+        } else {
+            cout << "led with 10%" ;
+        }
+        } else {
+            cout << "light off" ;
+        } 
+    }
+
 }
     
