@@ -118,3 +118,25 @@ int main() {
     
     return 0;
 }
+
+
+// PROGRAM 7
+//AGE GROUP CLASSIFIER
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cout << "enter a age: ";
+    cin >> age;
+    
+    (age >= 18 && age <= 88) ?
+    cout << "voter group" :
+    (age >= 10 && age <= 17) ? 
+    cout << "non voter group" :
+    cout << "child group" ;
+    
+
+    return 0;
+}
