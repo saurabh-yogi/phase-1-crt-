@@ -30,3 +30,32 @@ int main(){
     }
     return 0;
 }
+
+// problem 3
+// nested if else problem
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    
+    if(age >= 18){
+        if(age >= 50){
+            cout << "senior citizen eligible for vote";
+        } else {
+            cout << "eligible for vote";
+        }
+        
+        } else{
+            if(age < 0){
+            cout << "enter a valid age";
+            
+        } else {
+            cout << "not eligible for vote";
+        }
+            
+        
+    }
+}
