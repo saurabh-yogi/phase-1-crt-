@@ -181,3 +181,29 @@ int main() {
     }
     return 0;
 }
+
+
+    
+    
+// program 9
+// sum and avg of 3 numbers
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    float a, b, c, sum,avg;
+    
+    cout << "enter three numbers:" ;
+    cin >> a >> b >> c;
+    
+    sum = a + b + c;
+    avg = sum / 3;
+    
+    cout << "sum = " << sum << endl;
+    cout << "avg = " << avg << endl;
+    return 0;
+}
+    
+    
+
