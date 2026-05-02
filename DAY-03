@@ -50,3 +50,45 @@ int main(){
     
 }
 }
+
+// problem 3
+// prime number check
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    
+    
+    
+    
+    for(int i = 2; i <= n; i++){
+        if (n % i == 0){
+        cout << "not a prime no" ;
+        break; 
+    } else {
+        cout << "prime no" ;
+        break;
+    }
+    }
+}
+    
+
+
+// problem 4
+// smart phone unlock
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int password;
+    do {
+    cout << "enter a password";
+    cin >> password;
+}  while (password != 0000);
+    cout << "phone unlock";
+
+}
