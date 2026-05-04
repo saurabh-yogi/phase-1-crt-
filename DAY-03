@@ -92,3 +92,77 @@ int main(){
     cout << "phone unlock";
 
 }
+
+// problem 5
+// multiplication table
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    
+    for(int i= 1; i <= 20; i++){
+        
+        cout << n*i << endl;
+    }
+    return 0;
+}
+
+// problem 6
+// countdown timer
+
+#include <iostream>
+#include <chrono> // for sec.
+#include<thread> // for sleep
+
+
+using namespace std;
+
+int main(){
+    int time;
+    
+    cout << "enter times in seconds:";
+    cin >> time;
+    
+    while(time > 0){
+        cout <<"times off" <<time <<"seconds" <<endl;
+        this_thread::sleep_for(chrono::seconds(1));
+        time--;
+    }
+    cout << "times up" << endl;
+    return 0;
+}
+
+
+// problem 8
+// atm pin retry system
+#include <iostream>
+using namespace std;
+
+int main(){
+    int correctpin = 1001;
+    int enteredpin;
+    int attempts = 0;
+    int maxattempts = 3;
+    
+    while(attempts < maxattempts){
+        cout << "enter atm pin:";
+        cin >> enteredpin;
+        
+        if(enteredpin == correctpin){
+            cout << "access granted" << endl;
+            return 0;
+        } else {
+            attempts++;
+            cout <<"wrong pin:"<<endl;
+        }
+        if(attempts < maxattempts){
+            cout <<"try again:"<<maxattempts<<attempts<<endl;
+        }
+    }
+    cout << "card blocked:" << endl;
+    return 0;
+}
+
