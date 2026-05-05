@@ -1,0 +1,62 @@
+types of function 
+1st
+
+#include<iostream>
+using namespace std;
+
+void bellring(){
+    cout << "ting-tong";
+    
+}
+
+
+type 2nd
+
+#include<iostream>
+using namespace std;
+
+void sendMessage(string message){
+    cout << message;
+}
+
+int main(){
+    sendMessage("bjp wons..");
+}
+
+//type 3rd
+
+#include<iostream>
+using namespace std;
+
+int Ticketnumber(){
+    return 101;
+
+// type 4
+// currency converter
+
+#include<iostream>
+using namespace std;
+
+float Convert(float rupees){
+    return rupees / 95.25;
+    }
+int main(){
+    cout << Convert(100);
+}
+
+PROGRAM 1
+FUNCTION RETURN SOME VALUES
+
+#include<iostream>
+ using namespace std;
+
+int calculateArea(int length, int width){
+    return length*width;
+}
+
+int main(){
+    int a = 10;
+    int b = 5;
+    int area = calculateArea(a,b);
+    cout << area;
+}
