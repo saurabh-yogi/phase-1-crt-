@@ -1,0 +1,78 @@
+// // program 1
+// // COFFEE BILL
+
+// #include<iostream>
+// using namespace std;
+
+//  int bill (int a){
+//     return a * 30;
+//  }
+
+
+// int main(){
+    
+    
+//     cout << bill(5);
+// }
+
+// program 2
+// discount offer
+
+// #include<iostream>
+// using namespace std;
+
+// int discount (int amount){
+//     return ( amount - amount * 0.10);
+// }
+
+// int main(){
+//     cout << discount(1000);
+// }
+
+
+// program 3
+// SMART AC REMOTE
+#include<iostream>
+using namespace std;
+
+void setTemperature(){
+    cout << "temp set to 22'C" << "\n";
+}
+
+void setTemperature(double temp){
+    cout << "temp set to"<< temp << "'C" << "\n";
+}
+
+void setTemperature(string mode){
+    if(mode == "eco"){
+        cout << "temp set to 24'C" << "\n";
+    } else if (mode == "turbo"){
+        cout << "temp set to 18'C" << "\n";
+    }
+    
+}
+
+
+
+int main(){
+    setTemperature();
+    setTemperature(20.5);
+    setTemperature("eco");
+}
+
+
+//  PROBLEM 4
+//  POINTERS
+
+ #include<iostream>
+ using namespace std;
+
+ int main(){
+     int a = 10;
+     int *ptr1 = &a;
+     int b = 5;
+    int *ptr2 = &b;
+    int c = *ptr1 + *ptr2;
+    cout << c;
+}
+
