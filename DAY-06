@@ -76,3 +76,80 @@ int main(){
     cout << c;
 }
 
+// problem 5
+// swapping with POINTERS
+
+#include<iostream>
+using namespace std;
+
+void  swapno(int *ptr1, int *ptr2){
+    int temp;
+    temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
+    
+    int main(){
+        int a,b;
+        cin >> a;
+        cin >> b;
+      swapno(&a, &b);
+        cout << a << " " << b ;
+}
+
+// problem 6
+// classes - object
+
+#include<iostream>
+using namespace std;
+
+class Student{
+    public:
+    string name;
+    int age;
+    
+    
+    
+    void Introduce(){
+        cout <<  "his name is:" << name << "\n" << "his age is:" << age << "\n";
+    }
+};
+    
+    int main(){
+        Student s1;
+        s1.name = "yogi";
+        s1.age = 89;
+       s1.Introduce();
+        
+    
+}
+
+// problem 7
+// ACCESS SPECIFIER
+// TYPES -- 7.1 public
+//          7.2 private
+//          7.3 protected
+
+
+// 7.1 public
+
+#include<iostream>
+using namespace std;
+
+class publicPark{
+public:
+   void enter(){
+       cout<<"enter in park:";
+   }
+};
+
+int main(){
+    publicPark p;
+    p.enter();
+}
+        
+    
+    
+
+
+
