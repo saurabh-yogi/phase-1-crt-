@@ -19,3 +19,30 @@ int main(){
     updatebyRefrence(original);
     cout << original ;
 }
+
+// problem 2
+// parameterized constructor
+
+#include<iostream>
+using namespace std;
+ class Student{
+public:
+string name;
+int age;
+
+
+Student(string Studentname, int Studentage){
+    name = Studentname;
+    age = Studentage;
+}
+
+void introduce(){
+    cout << "his name is " << name << "his age is " << age << "\n";
+  }
+};
+
+int main(){
+    Student s1("yogi", 34);
+    s1.introduce();
+    
+}
