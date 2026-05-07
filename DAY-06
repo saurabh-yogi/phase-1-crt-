@@ -147,6 +147,54 @@ int main(){
     publicPark p;
     p.enter();
 }
+
+// 7.2
+// access specifier private
+
+#include<iostream>
+using namespace std;
+
+class bankAccount{
+private:
+    int balance = 5000;
+
+
+public:
+void showBalance(){
+    cout << balance;
+}
+};
+
+int main(){
+    bankAccount obj1;
+    obj1.showBalance();
+}
+
+// 7.3
+// access specifier pritected
+
+#include<iostream>
+using namespace std;
+
+class parent{
+    protected:
+    int secretcode = 1234;
+};
+
+
+class child : public parent{
+    public:
+    void accessLocker(){
+    cout << secretcode;
+}
+
+};
+
+int main(){
+    child obj1;
+    obj1.accessLocker();
+
+}
         
     
     
