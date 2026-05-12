@@ -1,0 +1,60 @@
+// recursive function
+
+#include<iostream>
+using namespace std;
+
+void printNumber(int number){
+    // base condition
+    if(number > 5){
+        return;
+    }
+    
+    
+    // logic
+    
+    cout << number;
+    printNumber(number+1);
+}
+
+int main(){
+    printNumber(1);
+}
+
+#include<iostream>
+using namespace std;
+
+
+
+int main(){
+    int num,  fact = 1;
+    
+    cout << "enter a number";
+    cin >> num;
+
+
+for(int i = 1; i <= num; i++){
+    fact = fact * i;
+}
+cout << "factorial" << fact;
+return 0;
+}
+
+
+// factorial through recursion
+#include<iostream>
+using namespace std;
+
+
+int factorial(int n){
+    // base
+    if(n == 0 || n == 1){
+        return 1;
+    }
+    
+    // logic
+    return n * factorial(n-1);
+}
+
+int main(){
+    cout << factorial(6);
+}
