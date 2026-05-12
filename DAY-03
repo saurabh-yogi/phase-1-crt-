@@ -166,3 +166,25 @@ int main(){
     return 0;
 }
 
+
+// FIBONACCI THROUGH RECURSIOM
+
+#include<iostream>
+using namespace std;
+
+int fibo(int n){
+    // base condition
+    if(n == 0){
+        return 0;
+    }
+    if (n == 1){
+        return 1;
+    }
+    // logic
+    return fibo (n -1) + fibo (n - 2);
+}
+
+int main(){
+    cout << fibo(n);
+}
+
