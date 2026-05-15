@@ -74,3 +74,33 @@ public:
 };
 
 
+
+GFG --Next Greater Element
+class Solution {
+  public:
+    vector<int> nextLargerElement(vector<int>& arr) {
+        int n = arr.size();
+        vector<int> ans(n);
+        stack<int> st;
+        // Traverse from right to left
+        for(int i = n - 1; i >= 0; i--) {
+            // Remove smaller or equal elements
+            while(!st.empty() && st.top() <= arr[i]) {
+                st.pop();
+            }
+            // Next greater element
+            if(st.empty()) {
+                ans[i] = -1;
+            }
+            else {
+                ans[i] = st.top();
+            }
+            // Push current element
+            st.push(arr[i]);
+        }
+        
+        return ans;
+    }
+};
+
+
