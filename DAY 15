@@ -27,3 +27,50 @@ int main(){
     }
     return 0;
 }
+
+
+LEETCODE 344
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+
+        stack<char> st;
+
+        // Push all characters into stack
+        for(int i = 0; i < s.size(); i++) {
+            st.push(s[i]);
+        }
+
+        // Pop characters back into vector
+        for(int i = 0; i < s.size(); i++) {
+            s[i] = st.top();
+            st.pop();
+        }
+    }
+};
+
+
+LEETCODE 20
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+        for(char ch : s) {
+            if(ch=='(' || ch=='[' || ch=='{')
+                st.push(ch);
+            else {
+                if(st.empty()) return false;
+                char t = st.top();
+                if((t=='(' && ch==')') ||
+                   (t=='[' && ch==']') ||
+                   (t=='{' && ch=='}'))
+                    st.pop();
+                else
+                    return false;
+            }
+        }
+        return st.empty();
+    }
+};
+
+
